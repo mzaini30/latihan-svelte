@@ -5,7 +5,7 @@
     "App.svelte"
   ],
   "sourcesContent": [
-    "<h3 class=\"tengah\">List teman</h3>\n<hr>\n<p>Ini adalah list teman-temanku...</p>\n<ul>\n\t<li>Satu</li>\n\t<li>Dua</li>\n\t<li>Tiga</li>\n</ul>\n<form>\n\t<input required type=\"\" placeholder=\"Tambahkan teman\" name=\"\">\n</form>\n<style type=\"text/css\">\n\t.tengah {\n\t\ttext-align: center;\n\t}\n</style>"
+    "<h3 class=\"tengah\">List teman</h3>\n<hr>\n<p>Ini adalah list teman-temanku...</p>\n<ul>\n\t{#each list as x}\n\t\t<li>{x}</li>\n\t{/each}\n</ul>\n<form on:submit|preventDefault={tambahkan}>\n\t<input required type=\"\" placeholder=\"Tambahkan teman\" bind:value={baru} name=\"\">\n</form>\n<style type=\"text/css\">\n\t.tengah {\n\t\ttext-align: center;\n\t}\n</style>\n<script type=\"text/javascript\">\n\tlet list = []\n\tlet baru = ''\n\tconst tambahkan = () => {\n\t\tlist = [baru, ...list]\n\t\tbaru = ''\n\t}\n</script>"
   ],
   "names": [],
   "mappings": "AAYC,OAAO,cAAC,CAAC,AACR,UAAU,CAAE,MAAM,AACnB,CAAC"
