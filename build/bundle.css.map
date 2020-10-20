@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "App.svelte"
+  ],
+  "sourcesContent": [
+    "<h3 class=\"tengah\">List teman</h3>\n<hr>\n<p>Ini adalah list teman-temanku...</p>\n<ul>\n\t<li>Satu</li>\n\t<li>Dua</li>\n\t<li>Tiga</li>\n</ul>\n<form>\n\t<input required type=\"\" placeholder=\"Tambahkan teman\" name=\"\">\n</form>\n<style type=\"text/css\">\n\t.tengah {\n\t\ttext-align: center;\n\t}\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAYC,OAAO,cAAC,CAAC,AACR,UAAU,CAAE,MAAM,AACnB,CAAC"
+}
